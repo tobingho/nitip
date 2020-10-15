@@ -12,7 +12,12 @@ function we(curWeekDate) {
 
   for (x = curWeekDate; x <= curWeekDate + 7; x++) {
     if (enabledDates.includes(x)) {
-      to_return = x - 7;
+      if (x > 7) {
+        to_return = x - 7;
+      }
+      else {
+        to_return = x;
+      }
       break;
     } else {
       to_return = false;
@@ -22,4 +27,4 @@ function we(curWeekDate) {
   return to_return;
 }
 
-console.log(we(7)); //isi dengan jumlah hari keberapa dalam 1 minggu, integer
+console.log(we(14)); //isi dengan jumlah hari keberapa dalam 1 minggu, integer
