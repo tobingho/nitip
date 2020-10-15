@@ -2,7 +2,7 @@
 // berdasarkan hari dalam minggu
 
 function we(curWeekDate) {
-  var enabledDates = [1, 2, 3, 6];
+  var enabledDates = [1, 2, 3, 6]; //isi dengan 1-7
   var to_return;
   var x;
 
@@ -22,4 +22,4 @@ function we(curWeekDate) {
   return to_return;
 }
 
-console.log(we(7));
+console.log(we(7)); //isi dengan jumlah hari keberapa dalam 1 minggu, integer
