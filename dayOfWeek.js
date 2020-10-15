@@ -12,7 +12,7 @@ function we(curWeekDate) {
 
   for (x = curWeekDate; x <= curWeekDate + 7; x++) {
     if (enabledDates.includes(x)) {
-      to_return = x;
+      to_return = x - 7;
       break;
     } else {
       to_return = false;
